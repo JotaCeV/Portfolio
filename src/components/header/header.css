@@ -11,7 +11,7 @@
   justify-content: center;
   align-items: center;
   padding: 2rem 0;
-  min-height: 464px;
+  min-height: 470px;
 }
 
 #welcome-msg {
@@ -20,18 +20,27 @@
   font-weight: 20px;
   text-transform: uppercase;
   font-family: "Rubik", sans-serif;
-  animation: fade-text 1.5s both;
+  animation: fade-out-text 1.5s both;
 }
 
 /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 
-@keyframes fade-text {
+@keyframes fade-out-text {
   10%,
   80% {
     color: white;
   }
   100% {
     color: transparent;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -42,6 +51,7 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 100%;
+  animation: fade-in 0.8s forwards;
 }
 
 .info-container h1 {
@@ -63,6 +73,7 @@
 
 .button-container {
   font-size: 3rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: center;

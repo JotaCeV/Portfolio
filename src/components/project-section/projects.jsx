@@ -1,24 +1,9 @@
-import {
-  Box,
-  Button,
-  Card,
-  CardBody,
-  CardFooter,
-  CardHeader,
-  Flex,
-  Grid,
-  Heading,
-  Image,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import React from "react";
 import HHHimg from "../../assets/Happy-Hour-Helper-img.png";
+import CardCUI from "./card/Card";
 
 function Projects() {
-  const redirect = (link) => {
-    return (window.location.href = link);
-  };
-
   return (
     <>
       <Box m="3rem 0" bg="#ffffff" borderRadius="0.4rem">
@@ -37,33 +22,19 @@ function Projects() {
         </Text>
 
         <Flex
-          p={"3rem 1rem"}
+          p="3rem 1rem"
           bg="#ecf0f1"
           wrap="wrap"
           borderRadius="0 0 0.4rem 0.4rem"
+          gap={10}
+          justifyContent="center"
         >
-          <Card w="20rem">
-            <CardHeader textAlign="center">
-              <Heading size="md">Happy Hour Helper</Heading>
-            </CardHeader>
-            <CardBody pb={3} textAlign="center">
-              <Image src={HHHimg} borderRadius="0.3rem" />
-              <Text p="0.5rem 0" as="b">
-                E-Commerce
-              </Text>
-            </CardBody>
-            <CardFooter pt={0}>
-              <Button
-                type="button"
-                color="#ffffff"
-                bg="#2ecc71"
-                width="100%"
-                onClick={() => redirect("https://happy-hour-helper.vercel.app")}
-              >
-                Ver proyecto
-              </Button>
-            </CardFooter>
-          </Card>
+          <CardCUI
+            name="Happy Hour Helper"
+            img={HHHimg}
+            tag="E-Commerce"
+            link="https://happy-hour-helper.vercel.app"
+          />
         </Flex>
       </Box>
     </>
