@@ -24,7 +24,7 @@ function Skills({ skillsRef }) {
       <Box
         m="3rem 0"
         bg="#ffffff"
-        p="2rem 0.5rem"
+        p="3rem 1.5rem"
         borderRadius="0.4rem"
         ref={skillsRef}
       >

@@ -6,7 +6,13 @@ import CardCUI from "./card/card";
 function Projects({ projectsRef }) {
   return (
     <>
-      <Box ref={projectsRef} m="3rem 0" bg="#ffffff" borderRadius="0.4rem">
+      <Box
+        ref={projectsRef}
+        p="3rem 1.5rem"
+        m="3rem 0"
+        bg="#ffffff"
+        borderRadius="0.4rem"
+      >
         <Heading
           as="h2"
           size="2xl"

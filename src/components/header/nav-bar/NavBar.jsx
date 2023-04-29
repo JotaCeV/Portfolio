@@ -2,7 +2,7 @@ import React from "react";
 import "./NavBar.css";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 
-function NavBar({ ref1, ref2, ref3 }) {
+function NavBar({ ref1, ref2, ref3, ref4 }) {
   const redirectAnotherWindow = (link) => {
     window.open(link, "_blank");
   };
@@ -24,7 +24,7 @@ function NavBar({ ref1, ref2, ref3 }) {
           <button onClick={() => handleRef(ref3)}>Proyectos</button>
         </li>
         <li>
-          <button>Contacto</button>
+          <button onClick={() => handleRef(ref4)}>Contacto</button>
         </li>
       </ul>
       <div className="button-container">
