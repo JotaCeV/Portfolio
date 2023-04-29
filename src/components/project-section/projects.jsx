@@ -1,7 +1,7 @@
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import React from "react";
 import HHHimg from "../../assets/Happy-Hour-Helper-img.png";
-import CardCUI from "./card/Card";
+import CardCUI from "./card/card";
 
 function Projects({ projectsRef }) {
   return (
