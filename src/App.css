@@ -1,21 +1,22 @@
-body {
+* {
   margin: 0;
   padding: 0;
-  background-color: #dfe6e9;
+  box-sizing: border-box;
+  font-family: "Pathway Extreme", sans-serif;
 }
 
 body::-webkit-scrollbar {
-  width: 1.1rem;
-  background-color: #dfe6e9;
-  position: absolute;
+  display: none;
 }
 
-body::-webkit-scrollbar-thumb {
-  background: #2ecc71;
-  border-radius: 0.5rem;
-  border-right: 2px solid #dfe6e9;
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.app-container {
+  background-color: #1e1e1e;
 }
 
 .home-container {
-  background-color: #dfe6e9;
+  background-color: #1e1e1e;
 }

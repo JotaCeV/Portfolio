@@ -3,10 +3,10 @@ import React from "react";
 import HHHimg from "../../assets/Happy-Hour-Helper-img.png";
 import CardCUI from "./card/Card";
 
-function Projects() {
+function Projects({ projectsRef }) {
   return (
     <>
-      <Box m="3rem 0" bg="#ffffff" borderRadius="0.4rem">
+      <Box ref={projectsRef} m="3rem 0" bg="#ffffff" borderRadius="0.4rem">
         <Heading
           as="h2"
           size="2xl"

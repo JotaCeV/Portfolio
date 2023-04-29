@@ -2,7 +2,7 @@ import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import AboutLogo from "../../assets/about-logo.png";
 
-function About() {
+function About({ aboutRef }) {
   return (
     <>
       <Flex
@@ -11,6 +11,7 @@ function About() {
         borderRadius="0.4rem"
         wrap="wrap"
         justifyContent="center"
+        ref={aboutRef}
       >
         <Box>
           <Image

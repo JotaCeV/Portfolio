@@ -13,7 +13,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 
-function Skills() {
+function Skills({ skillsRef }) {
   const styleLogo = {
     margin: "0 auto",
     transition: "all 0.2s",
@@ -21,7 +21,13 @@ function Skills() {
   };
   return (
     <>
-      <Box m="3rem 0" bg="#ffffff" p="2rem 0.5rem" borderRadius="0.4rem">
+      <Box
+        m="3rem 0"
+        bg="#ffffff"
+        p="2rem 0.5rem"
+        borderRadius="0.4rem"
+        ref={skillsRef}
+      >
         <Heading
           as="h2"
           size="2xl"
