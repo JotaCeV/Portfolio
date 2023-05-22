@@ -2,6 +2,7 @@ import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import React from "react";
 import HHHimg from "../../assets/Happy-Hour-Helper-img.png";
 import CardCUI from "./card/card";
+import projectsProps from "../../constants/projects-props.json";
 
 function Projects({ projectsRef }) {
   return (
@@ -35,12 +36,15 @@ function Projects({ projectsRef }) {
           gap={10}
           justifyContent="center"
         >
-          <CardCUI
-            name="Happy Hour Helper"
-            img={HHHimg}
-            tag="E-Commerce"
-            link="https://happy-hour-helper.vercel.app"
-          />
+          {projectsProps.projects.map((project, index) => (
+            <CardCUI
+              key={index}
+              name={project.name}
+              img={project.img}
+              tag={project.tag}
+              link={project.link}
+            />
+          ))}
         </Flex>
       </Box>
     </>

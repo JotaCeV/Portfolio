@@ -1,0 +1,16 @@
+{
+  "projects": [
+    {
+      "name": "Happy Hour Helper",
+      "img": "src/assets/Happy-Hour-Helper-img.png",
+      "tag": "E-Commerce",
+      "link": "https://happy-hour-helper.vercel.app"
+    },
+    {
+      "name": "Let's Decide",
+      "img": "src/assets/Lets-Decide.png",
+      "tag": "Web Game",
+      "link": "https://lets-decide-rsp.vercel.app"
+    }
+  ]
+}
