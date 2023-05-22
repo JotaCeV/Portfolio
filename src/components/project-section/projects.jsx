@@ -36,9 +36,8 @@ function Projects({ projectsRef }) {
           gap={10}
           justifyContent="center"
         >
-          {projectsProps.projects.map((project, index) => (
+          {projectsProps.projects.map((project) => (
             <CardCUI
-              key={index}
               name={project.name}
               img={project.img}
               tag={project.tag}
