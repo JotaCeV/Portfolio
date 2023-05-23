@@ -1,6 +1,5 @@
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import React from "react";
-import HHHimg from "../../assets/Happy-Hour-Helper-img.png";
 import CardCUI from "./card/card";
 import projectsProps from "../../constants/projects-props.json";
 
@@ -43,6 +42,7 @@ function Projects({ projectsRef }) {
               img={project.img}
               tag={project.tag}
               link={project.link}
+              tech={project.technologies}
             />
           ))}
         </Flex>
